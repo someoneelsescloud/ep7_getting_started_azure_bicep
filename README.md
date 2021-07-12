@@ -33,6 +33,8 @@ The VSCode extension has an excellent IntelliSense language service. This defini
     - [Install Azure Bicep via Azure CLI](https://github.com/Azure/bicep/blob/main/docs/installing.md#install-and-manage-via-azure-cli-easiest)
     - [Standalone Installer for Azure Bicep](https://github.com/Azure/bicep/blob/main/docs/installing.md#install-and-manage-via-azure-powershell)
 
+> **Note:** Installing either methods above will give you the same result. Just to note, when using Azure Bicep, the Azure CLI command does have additional options such as "upgrade".
+
 4. Install Visual Studio Code Extension
 
     - Search for the following extension called Bicep.
@@ -153,11 +155,14 @@ To build the code from the Episode run the following command:
     # Create the Resource Group
     az group create --name "$uniqueName-rg-1" --location eastus
 
-    # Build ARM Template from the Bicep file (optional)
+    # Build ARM Template from the Bicep file (optional - if used replace the following with main.json)
     az bicep build .\main.bicep
 
     # Deploy the Bicep file (replace main.bicep with main.json if the above is run - either will work)
     az deployment group create --resource-group "$uniqueName-rg-1" --name "$uniqueName-deployment" --template-file main.bicep --parameters uniqueName=$uniqueName adminPassword=$adminPassword userObjectId=$userObjectId 
+    
+    # Delete the Demo deployment
+    az deployment group delete --resource-group "$uniqueName-rg-1" --name "$uniqueName-deployment"
 
 ![bicep-diagram](./images/bicep-diagram.png)
 
@@ -173,10 +178,6 @@ To build the code from the Episode run the following command:
 - Performance and Event Log Data Sources
 - KeyVault
 - KeyVault Secret (localadmin)
-
-
-
-
 
 ## Episode References
 - [Project Bicep (Github)](https://github.com/Azure/bicep)
