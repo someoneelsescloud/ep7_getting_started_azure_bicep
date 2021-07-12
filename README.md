@@ -2,6 +2,23 @@
 
 In this episode, I will show you how to get started with Azure Bicep. We'll walk through how to setup your environment, how to write Bicep code and of course how to deploy your code.
 
+## What is Azure Bicep?
+Bicep is a Domain-Specific Language (DSL) that uses declarative syntax to deploy Azure resources.
+
+It acts as is a transparent abstraction layer over Azure Resource Manager (ARM) Templates. It reduces the complexity and improves the overall authoring experience over hand crafted ARM templates.
+
+In short, you can use Bicep to build ARM templates without having to decrypt the JSON language.
+
+This is definitely a step in the right direction by Microsoft, as Infrastructure as Code (IaC) is being widely adopted and CI/CD orchestration is here to stay.
+
+![azure-bicep-overview](./images/azure-bicep-overview.png)
+
+Bicep files are identified by a **.bicep** extension. You can see that VSCode will recognise the file with the Bicep icon.
+
+![bicep-file](./images/bicep-file.png)
+
+The VSCode extension has an excellent IntelliSense language service. This definitely helps with code completion, parameter info, quick info when building out Bicep code.
+
 ## Prerequities
 - Azure Subscription
 
@@ -21,23 +38,6 @@ In this episode, I will show you how to get started with Azure Bicep. We'll walk
     - Search for the following extension called Bicep.
 
     ![bicep-extension](./images/bicep-extension.png)
-
-## What is Azure Bicep?
-Bicep is a Domain-Specific Language (DSL) that uses declarative syntax to deploy Azure resources.
-
-It acts as is a transparent abstraction layer over Azure Resource Manager (ARM) Templates. It reduces the complexity and improves the overall authoring experience over hand crafted ARM templates.
-
-In short, you can use Bicep to build ARM templates without having to decrypt the JSON language.
-
-This is definitely a step in the right direction by Microsoft, as Infrastructure as Code (IaC) is being widely adopted and CI/CD orchestration is here to stay.
-
-![azure-bicep-overview](./images/azure-bicep-overview.png)
-
-Bicep files are identified by a **.bicep** extension. You can see that VSCode will recognise the file with the Bicep icon.
-
-![bicep-file](./images/bicep-file.png)
-
-The VSCode extension has an excellent IntelliSense language service. This definitely helps with code completion, parameter info, quick info when building out Bicep code.
 
 ## Creating your First Bicep File
 1. Create a file named **main.bicep**.
