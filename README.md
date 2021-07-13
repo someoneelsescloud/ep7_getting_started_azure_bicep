@@ -156,7 +156,7 @@ To build the code from the Episode run the following command:
     az group create --name "$uniqueName-rg-1" --location eastus
 
     # Build ARM Template from the Bicep file (optional - if used replace the following with main.json)
-    az bicep build .\main.bicep
+    az bicep build --file .\main.bicep
 
     # Deploy the Bicep file (replace main.bicep with main.json if the above is run - either will work)
     az deployment group create --resource-group "$uniqueName-rg-1" --name "$uniqueName-deployment" --template-file main.bicep --parameters uniqueName=$uniqueName adminPassword=$adminPassword userObjectId=$userObjectId 
