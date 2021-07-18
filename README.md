@@ -2,7 +2,7 @@
 
 In this episode, I will show you how to get started with Azure Bicep. We'll walk through how to setup your environment, how to write Bicep code and of course how to deploy your code.
 
-Watch the Full Episode on YouTube: https://youtu.be/R4KFPEj8f8c
+Watch the Full Episode on YouTube: https://youtu.be/Vux7kvB-i-E
 
 Listen to the Audio Only version:
 Google Podcasts: https://cutt.ly/ogvwqTl   
