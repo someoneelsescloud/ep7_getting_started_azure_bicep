@@ -2,6 +2,20 @@
 
 In this episode, I will show you how to get started with Azure Bicep. We'll walk through how to setup your environment, how to write Bicep code and of course how to deploy your code.
 
+Watch the Full Episode on YouTube: https://youtu.be/R4KFPEj8f8c
+
+Listen to the Audio Only version:
+Google Podcasts: https://cutt.ly/ogvwqTl   
+Apple Podcasts: https://cutt.ly/YgvweNk
+Spotify Podcasts: https://cutt.ly/igvwezs
+Stitcher Radio: https://cutt.ly/ugvwewo
+Tunein Radio: https://cutt.ly/Xgvwwpf
+
+Read the Episode blog here: https://www.someoneelsescloud.com/episodes/ep7-getting-started-with-azure-bicep
+
+Social Media: http://instagram.com/someoneelsescloud 
+Twitter: https://twitter.com/some1elsescloud
+
 ## What is Azure Bicep?
 Bicep is a Domain-Specific Language (DSL) that uses declarative syntax to deploy Azure resources.
 
@@ -186,3 +200,4 @@ To build the code from the Episode run the following command:
 - [Azure Bicep March 2021: Learn everything about the next generation of ARM Templates (YouTube)](https://www.youtube.com/watch?v=l85qv_1N2_A)
 - [Quickstart: Create Bicep files with Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-create-bicep-use-visual-studio-code?tabs=CLI)
 - [Bicep Playground](https://bicepdemo.z22.web.core.windows.net/)
+- [Visual Studio Marketplace - Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
